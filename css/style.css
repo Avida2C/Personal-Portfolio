@@ -1,346 +1,48 @@
-body
-{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #D9D9D9;
-    text-align: justify;
-
-}
-
-nav a
-{
-    text-decoration: none;
-    color: #161616;
-    letter-spacing: 2px;
-    text-align: center;
-    
-    
-}
-
-nav .logo
-{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-}
-
-.navwrapper
-{
-  float: right;
-  position: fixed;
-  width: 10%;
-  margin: 10px;
-  
-}
-
-.tab h3{
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.contentwrapper
-{
-    background-color: #e2e2e2;
-    float: right;
-    width: 79%;
-    padding: 5%;
-
-    
-
-}
-
-.tab
-{
-    background-color: #E2E2E2;
-    padding: 5px;
-    margin-bottom: 5px;
-
-}
-
-.tab img
-{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 20px;
-
-
-}
-
-.navico
-{
-    width: 30%;
-}
-
-#about
-{
-    padding: 10px;
-}
-
-#userimg
-{
-    float: left;
-    width: 25%;
-    display:block;
-    margin-top: auto;
-    margin-bottom: auto;
-
-}
-
-#userimg img
-{
-    width: 100%;
-    
-}
-
-#userdetails
-{
-    margin-left: 5%;
-    float: left;
-    width: 70%;
-
-}
-
-
-.percentagediv
-{
-
-   height: 30px;
-   margin-bottom: 50px;
-
-}
-
-#gdside1
-{
-    background-color:#ff9ea1;
-    width: 50%;
-    float: left;
-    height: 50px;
-
-
-}
-
-
- .percentagetxt
- {
-    text-align: center;
-
- }
-
-#wdside2
-{
-    background-color: #7d7d7d;
-    width: 25%;
-    float: right;
-    height: 50px;
-
-}
-
-#wdside1
-{
-    background-color:#ff9ea1;
-    width: 75%;
-    float: left;
-    height: 50px;
-
-
-}
-
-#uxside2
-{
-    background-color: #7d7d7d;
-    width: 10%;
-    float: right;
-    height: 50px;
-
-}
-
-#uxside1
-{
-    background-color:#ff9ea1;
-    width: 90%;
-    float: left;
-    height: 50px;
-
-
-}
-
-#maside2
-{
-    background-color: #7d7d7d;
-    width: 50%;
-    float: right;
-    height: 50px;
-    
-
-}
-
-#maside1
-{
-    background-color:#ff9ea1;
-    width: 50%;
-    float: left;
-    height: 50px;
-    
-
-}
-
-#gdside2
-{
-    background-color: #7d7d7d;
-    width: 50%;
-    float: right;
-    height: 50px;
-  
-}
-
-
-#userdetails h3
-{
-    letter-spacing: 10px;
-    font-size: 30px;
-}
-
-#userdetails p
-{
-    line-height: 40px;
-    letter-spacing: 2px;
-    text-align: justify;
-}
-
-.imgdecor
-{
-    width: 100%;
-}
-
-.btnresize
-{
-    width: 300px;
-}
-
-#projects
-{
-    padding: 10px;
-}
-
-#contact
-{
-    padding: 10px;
-}
-
-#contact h4
-{
+body {
     font-size: 16px;
-    font-style: italic;
+    line-height: 24px;
+    overflow-y: scroll;
 }
 
-form input
-{
-    margin-bottom: 20px;
-    width: 80%;
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 5px;
-    border-color: #ff9ea1;
-    border-width: 1px;
+.carousel-control-prev-icon {
+    width: 100px !important;
 }
 
-form textarea
-{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    margin-bottom: 20px;
-    width: 80%;
-    padding: 10px;
-    border-radius: 5px;
-    border-color: #ff9ea1;
-
+.carousel-control-prev,
+.carousel-control-next {
+    width: 20px !important;
 }
 
-form button
-{
-    padding-left: 60px;
-    padding-right: 60px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-size:large;
-    border-radius: 5px;
-    border-width: 1px;
-    background-color: #d9d9d9;
-    color: #161616;
-    border-color: #ffffff;
-
+#carouselExampleIndicators {
+    padding-left: 1.3em;
+    padding-right: 1.3em;
+    height: 300px;
+    background-color: #232323;
 }
 
-.linkdecor
-{
-    text-decoration: none;
-    color: #161616;
+#contact form {
+    padding: 0;
 }
 
-.gallery img
-{
-    width: 100%;
-
-}
-
-.gallery p
-{
-    font-size: 14px;
-    text-align: left;
-    color: #161616;
-    font-weight: 100;
-}
-
-.gallery h4
-{
-    text-align: left;
-    margin-bottom: -10px;
-    text-decoration: solid;
-    font-size: 18px;
-}
-
-
-.gallery table th
-
-{
-    padding: 15px;
-}
-
-footer
-{
-    margin-top: 120px;
-}
-
-.projectdata
-{
-    margin-top: 50px;
-    line-height: 30px;
-    background-color: #ffffff;
-    padding:5%;
-    border-radius: 10px;
-    border: #ff9ea1 solid 1px;
-}
-
-.projectdata p{
-    margin-bottom: 60px;
-}
-
-.title h1
-{
-    margin-bottom: -5px;
-}
-
-.title p
-{
-    margin-top: -2px;
-}
-
-.projectimg
-{
-    margin-bottom: 5%;
-    float: left;
+#contact form input,
+textarea {
     width: 50%;
-    border-radius: 10px;
+    padding: 0.3em;
+    margin-bottom: 1em;
+}
+
+#contact textarea {
+    height: 150px;
+    padding: 0.3em;
+    margin-bottom: 1em;
+}
+
+#contact form p {
+    padding: 0px;
+    margin: 0px;
+}
+
+#skills p {
+    margin-top: 1em;
+    margin-bottom: 0.2em;
 }
