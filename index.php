@@ -237,14 +237,12 @@
           <button class="btn btn-dark">Reset</button>
         </form>
       </div>
-
-
     </div>
   </div>
 
   <?php require_once "include/footer.php";
-require "include/scripts.php";
-?>
+    require "include/scripts.php";
+    ?>
 </body>
 
 </html>
