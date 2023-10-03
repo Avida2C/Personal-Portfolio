@@ -1,8 +1,5 @@
 <?php require 'functions.php';
 
-
-
-
 ?>
 
 <body id="index">
