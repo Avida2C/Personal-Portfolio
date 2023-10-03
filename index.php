@@ -1,5 +1,34 @@
 <?php require 'functions.php';
 
+$isValid = true;
+if($_SERVER['REQUEST_METHOD'] == "POST") {
+    $name = htmlspecialchars(addslashes($_POST['name']));
+    if(preg_match($pattern['name'], $name)!= 1) {
+        $isValid = false;
+    }
+
+    $email = htmlspecialchars(addslashes($_POST['email'])); 
+    if(preg_match($pattern['email'], $email)!= 1) {
+        $isValid = false;
+        
+    }
+    $subject = htmlspecialchars(addslashes($_POST['subject']));
+    if(preg_match($pattern['subject'], $subject)!= 1) {
+        $isValid = false;
+    }
+   
+    if($isValid) {
+        if (isset($_POST["Mailer"])) {
+            $name = htmlspecialchars($_POST["name"]);
+            $email = htmlspecialchars($_POST["email"]);
+            $subject = htmlspecialchars($_POST["subject"]);
+            $message= htmlspecialchars($_POST["message"]);
+    
+            $sent = Mailer($email, $name, $subject, $message);
+        }   
+
+    }
+}
 ?>
 
 <body id="index">
@@ -221,24 +250,37 @@
         <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="25" aria-valuemin="0"
           aria-valuemax="100">70%</div>
       </div>
-
     </div>
 
     <div id="contact" class="py-4">
       <div class="form-control">
         <h3>Contact Me</h3>
         <p>Like what you see? Send me a message:</p>
-        <form method="POST">
+        <form id="ContactMeform" method="POST">
           <label for="name">Name:</label><br>
-          <input type="name"><br>
+          <input id="contactName" type="text" name="name" required></br>
           <label for="email">Email:</label><br>
-          <input type="text" name="" id=""><br>
+          <input id="contactEmail" type="email" name="email" required><br>
           <label for="subject">Subject:</label><br>
-          <input type="text" name="" id=""><br>
+          <input id="contactSubject" type="text" name="subject" required><br>
           <label for="message">Message:</label><br>
-          <textarea name="" id="" cols="30" rows="10"></textarea><br>
-          <button class="btn btn-dark">Send Message</button>
+          <textarea id="contactMessage" name="message" cols="30" rows="10" required></textarea><br>
+          <button class="btn btn-dark" name="Mailer">Send Message</button>
           <button class="btn btn-dark">Reset</button>
+          <?php if(!$isValid) {
+          echo '<p style="color:red;" class="pt-3">One or more inputs are incorrect! Please try again. </p>';
+          }
+          if (isset($sent)) {
+              if($sent) {
+                    echo "<p class='pt-3' style='color:green;'> Message Sent! </p>";
+              }
+              else
+                    {
+                  echo "<p class='pt-3' style='color:red;'> Message not sent! </p>";
+              }  
+          }
+          
+            ?>
         </form>
       </div>
     </div>
