@@ -266,7 +266,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
           <label for="message">Message:</label><br>
           <textarea id="contactMessage" name="message" cols="30" rows="10" required></textarea><br>
           <button class="btn btn-dark" name="Mailer">Send Message</button>
-          <button class="btn btn-dark">Reset</button>
+          <button type="reset" class="btn btn-dark">Reset</button>
           <?php if(!$isValid) {
           echo '<p style="color:red;" class="pt-3">One or more inputs are incorrect! Please try again. </p>';
           }
