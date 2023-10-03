@@ -36,9 +36,8 @@ $('#ContactMeform').on('submit', function () {
     var contactNameValid = validate($('#contactName')[0], patterns.name);
     var contactEmailValid = validate($('#contactEmail')[0], patterns.email);
     var contactSubjectValid = validate($('#contactSubject')[0], patterns.subject);
-    
-    if(contactNameValid && contactEmailValid && contactSubjectValid)
-    {
+
+    if (contactNameValid && contactEmailValid && contactSubjectValid) {
         return true;
     }
     return false;

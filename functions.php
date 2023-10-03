@@ -60,6 +60,4 @@ function Mailer($email, $name, $subject, $message)
     catch (Exception $e) {
         return false;
     }
-}
-
-?>
+}?>

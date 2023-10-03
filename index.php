@@ -10,8 +10,8 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
     $email = htmlspecialchars(addslashes($_POST['email'])); 
     if(preg_match($pattern['email'], $email)!= 1) {
         $isValid = false;
-        
     }
+    
     $subject = htmlspecialchars(addslashes($_POST['subject']));
     if(preg_match($pattern['subject'], $subject)!= 1) {
         $isValid = false;
@@ -26,10 +26,8 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
     
             $sent = Mailer($email, $name, $subject, $message);
         }   
-
     }
-}
-?>
+}?>
 
 <body id="index">
   <?php require "include/head.php";
@@ -53,6 +51,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
                   </div>
                 </div>
               </div>
+
               <div class="col-xl-3 col-lg-4 col-md-6 mb-4 gallery-item">
                 <div class="bg-white shadow-sm" style="height: 300px;"><img
                     src="https://bootstrapious.com/i/snippets/sn-gallery/img-8.jpg" alt=""
@@ -87,6 +86,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
               </div>
             </div>
           </div>
+
           <div class="carousel-item">
             <div class="d-flex">
               <div class="col-xl-3 col-lg-4 col-md-6 mb-4 gallery-item">
@@ -134,6 +134,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
               </div>
             </div>
           </div>
+
           <div class="carousel-item">
             <div class="d-flex">
               <div class="col-xl-3 col-lg-4 col-md-6 mb-4 gallery-item">
@@ -187,6 +188,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
+
         <button class="carousel-control-next bg-dark" type="button" data-bs-target="#carouselExampleIndicators"
           data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
@@ -195,13 +197,13 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
       </div>
     </div>
 
-
     <div id="about" class="py-4 w-100">
       <h3>About Me</h3>
       <div class="d-flex">
         <div class="col col-md-4">
           <img src="img/woman.jpg" class="w-100" alt="">
         </div>
+
         <div class="col col-md-8 ps-3">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas minima, ut tempora delectus nisi cumque
             nostrum quidem quaerat esse quo fuga? Tempora facilis suscipit eos, magnam necessitatibus odit minima!
@@ -219,22 +221,25 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
           <a href="download.php"><button style="float:right;" class="mt-2 btn btn-dark">Download Resume</button></a>
         </div>
       </div>
-
     </div>
+
     <div id="skills">
       <h4>My Skills</h4>
       <p>
         Graphic Design
       </p>
+
       <div class="progress">
         <div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="25" aria-valuemin="0"
           aria-valuemax="100">65%</div>
       </div>
+
       <p>3D Sculpturing and Modeling</p>
       <div class="progress">
         <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="25" aria-valuemin="0"
           aria-valuemax="100">70%</div>
       </div>
+
       <p>Web Development</p>
       <div class="progress">
         <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="25" aria-valuemin="0"
@@ -268,19 +273,16 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
           <button class="btn btn-dark" name="Mailer">Send Message</button>
           <button type="reset" class="btn btn-dark">Reset</button>
           <?php if(!$isValid) {
-          echo '<p style="color:red;" class="pt-3">One or more inputs are incorrect! Please try again. </p>';
+                echo '<p style="color:red;" class="pt-3">One or more inputs are incorrect! Please try again. </p>';
           }
           if (isset($sent)) {
               if($sent) {
                     echo "<p class='pt-3' style='color:green;'> Message Sent! </p>";
               }
-              else
-                    {
+              else{
                   echo "<p class='pt-3' style='color:red;'> Message not sent! </p>";
               }  
-          }
-          
-            ?>
+          }?>
         </form>
       </div>
     </div>
