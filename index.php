@@ -1,3 +1,10 @@
+<?php require 'functions.php';
+
+
+
+
+?>
+
 <body id="index">
   <?php require "include/head.php";
     require_once "include/navbar.php";?>
@@ -189,7 +196,7 @@
 
     </div>
     <div id="skills">
-      <h3>My Skills</h3>
+      <h4>My Skills</h4>
       <p>
         Graphic Design
       </p>

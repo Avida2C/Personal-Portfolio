@@ -17,10 +17,6 @@
                             <i class="fs-4 bi-table"></i> <span class="ms-1 d-none d-sm-inline">About Me</span></a>
                     </li>
                     <li>
-                        <a href="#skills" class="nav-link px-0 align-middle">
-                            <i class="fs-4 bi-table"></i> <span class="ms-1 d-none d-sm-inline">My Skills</span></a>
-                    </li>
-                    <li>
                         <a href="#contact" class="nav-link px-0 align-middle">
                             <i class="fs-4 bi-table"></i> <span class="ms-1 d-none d-sm-inline">Contact Me</span></a>
                     </li>
