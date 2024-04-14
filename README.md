@@ -18,11 +18,10 @@ This project is a personal portfolio website designed to showcase projects, skil
 ## Installation
 
 1. Clone or download the repository to your local machine.
-2. Set up a MySQL database (if needed) and configure the connection in connection.php.
-3. Install PHPMailer using Composer.
-4. Configure PHPMailer settings in the functions.php file.
-5. Run the application on a local server environment (XAMPP, WAMP, MAMP).
-6. Open the application in a web browser by navigating to the local server's host address.
+2. Install PHPMailer using Composer.
+3. Configure PHPMailer settings in the functions.php file.
+4. Run the application on a local server environment (XAMPP, WAMP, MAMP).
+5. Open the application in a web browser by navigating to the local server's host address.
 ## Usage
 
 - Explore the carousel to view different projects.
