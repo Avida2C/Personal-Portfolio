@@ -1,8 +1,8 @@
 
-# Personal Portfolio Website
+# Portfolio Template
 <div><img src="https://img.shields.io/badge/HTML-eb5a00?style=flat" alt="HTML" /> <img src="https://img.shields.io/badge/CSS-006aff?style=flat" alt="CSS" /> <img src="https://img.shields.io/badge/Bootstrap-b319ff?style=flat" alt="Bootstrap" /> <img src="https://img.shields.io/badge/JavaScript-ffdd00?style=flat" alt="JavaScript" /> <img src="https://img.shields.io/badge/PHP-8fceff?style=flat" alt="PHP" /></div>
 
-This project is a personal portfolio website designed to showcase projects, skills, and provide information about the site owner. It features a dynamic carousel for project display, an "About Me" section, a skills progress bar, and a contact form with input validation and email functionality using PHPMailer. The website is built with PHP, MySQL, HTML, CSS, and JavaScript.
+This project is a portfolio template designed to showcase projects, skills, and provide information about the site owner. It features a dynamic carousel for project display, an "About Me" section, a skills progress bar, and a contact form with input validation and email functionality using PHPMailer. The website is built with PHP, MySQL, HTML, CSS, and JavaScript.
 
 
 ## Features
